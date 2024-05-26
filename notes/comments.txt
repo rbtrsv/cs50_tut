@@ -1,0 +1,30 @@
+Comments are fundamental parts of a computer program, where you leave explanatory remarks to yourself and others that may be collaborating with you regarding your code.
+All code you create for this course must include robust comments.
+Typically each comment is a few words or more, providing the reader an opportunity to understand what is happening in a specific block of code. Further, such comments serve as a reminder for you later when you need to revise your code.
+Comments involve placing // into your code, followed by a comment. Modify your code as follows to integrate comments:
+
+#include <cs50.h>
+#include <stdio.h>
+
+int main(void)
+{
+    // Prompt user for positive integer
+    int n;
+    do
+    {
+        n = get_int("Size: ");
+    }
+    while (n < 1);
+
+    // Print an n-by-n grid of bricks
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < n; j++)
+        {
+            printf("#");
+        }
+        printf("\n");
+    }
+}
+
+Notice how each comment begins with a //.
